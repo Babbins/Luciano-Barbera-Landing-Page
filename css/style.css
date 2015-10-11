@@ -1,0 +1,210 @@
+@font-face{
+	font-family:'zee-font';
+	src: url('../fonts/BOD72SCW.TTF');
+}
+@font-face{
+	font-family:'signup-font';
+	src: url('../fonts/AvenirLTStd-Medium.otf');
+}
+body{
+	background: #464646 url('../images/background.jpg') no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+}
+@media only screen (max-width: 400px){
+	.midbox{
+		background-color: white;
+	}
+}
+
+.midbox{
+	margin-top:145px;
+	background: url('../images/box.png') no-repeat center center;
+	background-size:contain;
+	max-width: 100%;
+	height:466px;
+}
+.logo{
+	padding-top:90px;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 100%;
+	width: 365px;
+}
+p{
+	padding-top:40px;
+	font-family:'zee-font';
+	font-size:17.5px;
+}
+.required{
+	margin-top:20px;
+}
+#mce-EMAIL{
+	height:60px;
+	width:340px;
+	font-family:'signup-font';
+	font-size:19px;
+	text-align: center;
+	max-width: 100%;
+	border: 1px solid #d6d6d6;
+}
+#mc-embedded-subscribe{
+	color:white;
+	font-family:'signup-font';
+	font-size:14px;
+	font-weight:100;
+	letter-spacing:2px;
+	margin-top:20px;
+	background-color:#8e6d48;
+	border:none;
+	width:120px;
+	height:45px;
+	line-height: 45px;
+	position: relative;
+}
+#bottom-text{
+	display:block;
+	margin-top:40px;
+	padding-bottom:50px;
+	font-family:'zee-font';
+	color:white;
+	font-size:17.5px;
+}
+#socialmedia{
+	display:block;
+	margin-top:30px;
+}
+.social{
+	margin-left:5px;
+	margin-right:5px;
+}
+.social-pic{
+	height:36px;
+	width:36px;
+}
+
+#email{
+	color:inherit;
+	text-decoration:none;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+   font-family:'zee-font';
+   font-style:italic;
+   font-size:16.5px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+   font-family:'zee-font';
+   font-style:italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+   font-family:'zee-font';
+   font-style:italic;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+   font-family:'zee-font';
+   font-style:italic;
+}
+@media only screen and (max-width: 500px){
+	.midbox{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.logo{
+		padding-top: 125px;
+	}
+	#mce-EMAIL{
+		height: 30px;
+	}
+	.required{
+		margin-top: 0px;
+	}
+	p{
+		padding-top: 15px;
+	}
+	#mce-EMAIL{
+		margin-top: 10px;
+	}
+	#mc-embedded-subscribe{
+		 margin-top: 25px !important;
+	}
+	.mce_inline_error{
+		margin: 0px !important;
+	}
+}
+
+//***************************************
+//*********** MailChimp CSS *************
+//***************************************
+
+/* MailChimp Form Embed Code - Classic - 08/17/2011 */
+#mc_embed_signup form {display:block; position:relative;}
+#mc_embed_signup input {-webkit-appearance:none;}
+#mc_embed_signup .button {clear:both; cursor: pointer;}
+#mc_embed_signup .nowrap {white-space:nowrap;}
+
+#mc_embed_signup .mc-field-group {clear:left;}
+#mc_embed_signup .size1of2 {clear:none;}
+* html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
+#mc_embed_signup .mc-field-group select {display:inline-block;}
+
+#mc_embed_signup .datefield, #mc_embed_signup .phonefield-us{padding:5px 0;}
+#mc_embed_signup .datefield input, #mc_embed_signup .phonefield-us input{display:inline; width:60px; margin:0 2px; letter-spacing:1px; text-align:center; padding:5px 0 2px 0;}
+#mc_embed_signup .phonefield-us .phonearea input, #mc_embed_signup .phonefield-us .phonedetail1 input{width:40px;}
+#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input{width:30px;}
+#mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
+
+#mc_embed_signup .clear {clear:both;}
+
+#mc_embed_signup .mc-field-group.input-group ul {margin:0; padding:5px 0; list-style:none;}
+#mc_embed_signup .mc-field-group.input-group ul li {display:block; padding:3px 0; margin:0;}
+#mc_embed_signup .mc-field-group.input-group label {display:inline;}
+#mc_embed_signup .mc-field-group.input-group input {display:inline; width:auto; border:none;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc-embedded-subscribe {clear:both;}
+#mc_embed_signup #num-subscribers {font-size:1.1em;}
+/*div.mce_inline_error{font-size: 10px; margin-top: 5px; background-color: transparent !important; color: #8a1937 !important; padding-bottom: 0px !important;}
+input.mce_inline_error{ margin-top: 0px !important;}
+*/
+div.mce_inline_error{display: none !important;}
+/*#mc_embed_signup input.mce_inline_error{border-color: red !important;}
+*/
+.valid{display: none !important;}
+.success{display: block; padding-top: 20px; padding-bottom: 20px;}
+.success-message{display: none;}
+
+#mc_embed_signup #mce-error-response, #mc_embed_signup #mce-success-response {
+	color: grey;
+	font-family: 'signup-font';
+	font-size: 17px;
+	font-style: italic;
+	padding-top: 5px;
+	left: 50%;
+	margin-left: -200px;
+	position: relative;
+	width: 400px;
+}
+#mc_embed_signup #mce-error-response {
+	display: none;
+}
+#mc_embed_signup #mce-success-response {
+	display: none;
+}
+@media only screen and (max-width: 500px) {
+	#mc_embed_signup #mce-error-response, #mc_embed_signup #mce-success-response {
+		margin-left: -45%;
+		width: 90%;
+	}
+}
+89.96.131.144
